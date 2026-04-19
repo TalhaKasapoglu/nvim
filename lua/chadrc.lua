@@ -7,7 +7,7 @@
 
 
   M.base46 = {
-    theme = "chadtain",
+    theme = "mountain",
     transparency = true,
     -- hl_override = {
       -- 	Comment = { italic = true },
