@@ -7,7 +7,7 @@
 
 
   M.base46 = {
-    theme = "everforest",
+    theme = "default-dark",
     transparency = true,
     -- hl_override = {
       -- 	Comment = { italic = true },

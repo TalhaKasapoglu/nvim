@@ -10,7 +10,7 @@ if not vim.uv.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
-vim.o.relativenumber = true
+-- vim.o.relativenumber = true
 
 local lazy_config = require "configs.lazy"
 
