@@ -38,45 +38,7 @@ return {
       },
     },
     autotag = { enable = true },
-  },
-  {
-  "hrsh7th/nvim-cmp",
-  opts = function()
-    local cmp = require "cmp"
-    -- NvChad'in varsayılan cmp ayarlarını alıyoruz
-    local conf = require "nvchad.configs.cmp"
-
-    -- Tuş eşlemelerini (mappings) genişletiyoruz/değiştiriyoruz
-    conf.mapping = cmp.mapping.preset.insert({
-      -- Aşağı ok tuşu ile sonraki öğeye geçiş
-      ["<Down>"] = cmp.mapping(function(fallback)
-        if cmp.visible() then
-          cmp.select_next_item()
-        else
-          fallback()
-        end
-      end, { "i", "s" }),
-
-      -- Yukarı ok tuşu ile önceki öğeye geçiş
-      ["<Up>"] = cmp.mapping(function(fallback)
-        if cmp.visible() then
-          cmp.select_prev_item()
-        else
-          fallback()
-        end
-      end, { "i", "s" }),
-
-      -- Seçimi onaylamak için Enter (CR) tuşu
-      ["<CR>"] = cmp.mapping.confirm({ select = true }),
-      
-      -- İstersen Tab tuşunun işlevini tamamen kaldırabilir veya normal tab olarak bırakabilirsin
-      -- ["<Tab>"] = cmp.config.disable, 
-    })
-
-    return conf
-  end,
-},
-
+  }, 
   {
     "windwp/nvim-ts-autotag",
     ft = { "html", "javascript", "typescript", "javascriptreact", "typescriptreact", "svelte", "vue" },
