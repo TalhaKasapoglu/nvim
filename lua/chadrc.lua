@@ -7,7 +7,7 @@
 
 
   M.base46 = {
-    theme = "default-dark",
+    theme = "nord",
     transparency = true,
     -- hl_override = {
       -- 	Comment = { italic = true },
